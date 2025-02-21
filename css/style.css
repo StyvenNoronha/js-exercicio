@@ -4,25 +4,25 @@
   box-sizing: border-box;
 }
 
-.dia{
-    background-color:  #76c9c9;
-    & .image{
-        background-image: url('../img/dia.png');
-    }
+.dia {
+  background-color: #76c9c9;
+  & .image {
+    background-image: url("../img/dia.png");
+  }
 }
 
-.tarde{
-    background-color: #f7bf07;
-    & .image{
-        background-image: url('../img/tarde.png');
-    } 
+.tarde {
+  background-color: #f7bf07;
+  & .image {
+    background-image: url("../img/tarde.png");
+  }
 }
 
-.noite{
-    background-color: #1746ad;
-    & .image{
-        background-image: url('../img/noite.png');
-    } 
+.noite {
+  background-color: #1746ad;
+  & .image {
+    background-image: url("../img/noite.png");
+  }
 }
 
 body {
@@ -47,13 +47,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
 
     & .image {
-        height: 200px;
-        width: 200px;
-        border-radius: 10px;
-        background-position: center;
-        background-repeat: no-repeat;
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
