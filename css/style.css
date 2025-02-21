@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dia{
+    background-color:  #76c9c9;
+    & .image{
+        background-image: url('../img/dia.png');
+    }
+}
+
+.tarde{
+    background-color: #f7bf07;
+    & .image{
+        background-image: url('../img/tarde.png');
+    } 
+}
+
+.noite{
+    background-color: #1746ad;
+    & .image{
+        background-image: url('../img/noite.png');
+    } 
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  & header {
+    & h1 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
+  & main {
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .image {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  }
+
+  & footer {
+    & p {
+      margin-top: 1rem;
+    }
+  }
+}
