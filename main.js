@@ -7,7 +7,7 @@ day = agora.getHours();
 
 hora.innerText = `Agora são ${day} Horas`;
 
-if (day >= 1 && day < 12) {
+if (day >= 0 && day < 12) {
   body.classList.add("dia");
   texto.innerText = "BOM DIA";
 } else if (day >= 12 && day < 18) {
